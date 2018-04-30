@@ -139,9 +139,9 @@ p, h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility; }
 h1 { font-size: 3.05rem; line-height: 2; letter-spacing: 1rem; text-transform: uppercase;}
 h2 { font-size: 2rem; line-height: 1.2; font-style: italic; margin-bottom: 8rem; }
-h3 { font-size: 2rem; line-height: .4; }
-h4 { font-size: 1.2rem; line-height: 1.; }
-h5 { font-size: 1rem; line-height: 1; }
+h3 { font-size: 2rem; line-height: 1.4; }
+h4 { font-size: 2.6rem; line-height: 1; letter-spacing: .1rem; text-transform: uppercase; }
+h5 { font-size: 1.4rem; line-height: 1; letter-spacing: .1rem; text-transform: uppercase; }
 h6 { font-size: .8rem; line-height: 1; }
 
 /* Larger than phablet */
@@ -149,8 +149,8 @@ h6 { font-size: .8rem; line-height: 1; }
   h1 { font-size: 3.05rem; }
   h2 { font-size: 2rem; }
   h3 { font-size: 2rem; }
-  h4 { font-size: 1.2rem; }
-  h5 { font-size: 1rem; }
+  h4 { font-size: 2.6rem; }
+  h5 { font-size: 1.4rem; }
   h6 { font-size: .8rem; }
 }
 
@@ -428,6 +428,33 @@ there.
 /* Custom
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.story-cover {
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  background-color: #C62437; }
+
+.story-quote {
+  margin-left: 0; }
+
+.story-quote-inner {
+  height: 240px;
+  margin: 10px 0 10px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 1px solid #E0E0E0;
+  border-right: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0; }
+
+.quote {
+  color: #C62437;
+  font-style: italic; }
+
 #footer {
   position: fixed;
   display: inline-block;
@@ -439,15 +466,12 @@ there.
   text-transform: uppercase;
   letter-spacing: .1rem;
   text-align: center;
-  font-size: 1.2rem;
-}
+  font-size: 1.2rem; }
 
 #footer a {
   color: #333;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 #footer a:hover {
   color: #000;
-  text-decoration: line-through;
-}
+  text-decoration: line-through; }
