@@ -432,8 +432,124 @@ there.
 /* Custom
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.story-cover {
+.book {
+  width: 280px;
   height: 300px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #999;
+  -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+      -o-perspective: 800px;
+        perspective: 800px; }
+
+#story {
+  width: 100%;
+  height: 100%;
+  position; absolute;
+  -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+      -o-transition: -o-transform 1s;
+        transition: transform .4s;
+  -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+  -webkit-transform-origin: left center;
+    -moz-transform-origin: right center;
+      -o-transform-origin: right center;
+        transform-origin: left center; }
+
+.flipped {
+  -webkit-transform: translateY(00%) rotateY(-130deg);
+	 -moz-transform: translateY(00%) rotateY(-130deg);
+	  -ms-transform: translateY(00%) rotateY(-130deg);
+	   -o-transform: translateY(00%) rotateY(-130deg);
+	    transform: translateY(00%) rotateY(-130deg); }
+
+#cover > div {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+        backface-visibility: hidden; }
+
+.front {
+  color: #fff;
+  background-color: #C62437;
+  margin: 0; }
+
+.front a {
+  color: #fff;
+  text-decoration: none; }
+
+.back {
+  background: #1a8;
+  margin: 0;
+  -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+      -ms-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+          transform: rotateY( 180deg ); }
+
+.inside {
+  border: 1px solid #ff0000;
+  justify-content: center;
+  flex-direction: column; }
+/*
+.story-wrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+.story {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 10%;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  z-index: 9999999; }
+
+.story > div {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.story-cover {
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -445,20 +561,19 @@ there.
   color: #fff;
   text-decoration: none; }
 
+
+#book.open .story {
+  -webkit-transform: rotate3d(0, 1, 0, -130deg);
+  -moz-transform: rotate3d(0, 1, 0, -130deg);
+  -o-transform: rotate3d(0, 1, 0, -130deg);
+  -ms-transform: rotate3d(0, 1, 0, -130deg);
+  transform: rotate3d(0, 1, 0, -130deg); }
+
 .story-quote {
   margin-left: 0; }
 
-.story-quote-inner {
-  height: 240px;
-  margin: 10px 0 10px 0;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border-top: 1px solid #E0E0E0;
-  border-right: 1px solid #E0E0E0;
-  border-bottom: 1px solid #E0E0E0; }
 
+*/
 .quote {
   color: #C62437;
   font-style: italic; }
