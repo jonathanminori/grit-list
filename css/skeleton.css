@@ -140,8 +140,8 @@ p, h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 3.05rem; line-height: 2; letter-spacing: 1rem; text-transform: uppercase;}
 h2 { font-size: 2rem; line-height: 1.3; font-style: italic; margin-bottom: 6rem; }
 h3 { font-size: 2rem; line-height: 1.3; }
-h4 { font-size: 2.8rem; line-height: .8; letter-spacing: .1rem; text-transform: uppercase; }
-h5 { font-size: 1.4rem; line-height: 3; letter-spacing: .2rem; text-transform: uppercase; }
+h4 { font-size: 2.8rem; line-height: 1; letter-spacing: .1rem; text-transform: uppercase; }
+h5 { font-size: 1.4rem; line-height: 2; letter-spacing: .2rem; text-transform: uppercase; }
 h6 { font-size: .8rem; line-height: 1; }
 
 /* Larger than phablet */
@@ -432,12 +432,17 @@ there.
 /* Custom
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.symbol {
+  cursor: help;
+}
+
 .story {
   position: relative;
   display: inline-block;
-  padding: 40px 50px 16px 50px;
+  padding: 40px 50px 30px 50px;
   text-decoration: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+  border-top: 5px solid #F50431;
   -webkit-transition: all .4s ease;
   -moz-transition: all .4s ease;
   -o-transition: all .4s ease;
@@ -451,12 +456,13 @@ there.
 
 .story hr {
   width: 10px;
-  margin: 0 auto 22px auto;
+  margin: 0 auto 32px auto;
 }
 
 .quote {
   font-style: italic;
-  line-height: 2.2rem;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 #footer {
