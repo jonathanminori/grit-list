@@ -32,9 +32,9 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1440px;
   margin: 0 auto 150px auto;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box;
   text-align: center; }
 .column,
@@ -53,7 +53,7 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 85%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -125,8 +125,8 @@ html {
 body {
   font-size: 1.8em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
-  font-weight: 400;
-  font-family: "Amiri", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   color: #000; }
 
 
@@ -137,7 +137,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: 300;
   text-rendering: optimizeLegibility; }
-h1 { font-size: 3.05rem; line-height: 2; letter-spacing: 1rem; text-transform: uppercase;}
+h1 { font-size: 3.05rem; line-height: 1; font-weight: 600; }
 h2 { font-size: 2rem; line-height: 1.3; font-style: italic; margin-bottom: 6rem; }
 h3 { font-size: 2rem; line-height: 1.3; }
 h4 { font-size: 2.8rem; line-height: 1; letter-spacing: .1rem; text-transform: uppercase; }
